@@ -10,7 +10,15 @@
 </template>
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted() {
+    console.log('App this :>> ', this);
+    this.$alert1()
+    this.$alert2()
+  },
+  directives: {
+
+  }
 };
 </script>
 
